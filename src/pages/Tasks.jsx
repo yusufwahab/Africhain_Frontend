@@ -111,7 +111,7 @@ export default function Tasks() {
   const titleStyle = {
     fontSize: '2rem',
     fontWeight: 'bold',
-    color: '#111827'
+    color: '#15803d'
   }
 
   const quickInputStyle = {

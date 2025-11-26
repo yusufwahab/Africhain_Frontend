@@ -38,8 +38,8 @@ export default function RouteOptimizer() {
 
   return (
     <div style={{ padding: '24px', maxWidth: '1280px', margin: '0 auto' }}>
-      <div style={{ textAlign: 'center', marginBottom: '32px' }}>
-        <h1 style={{ fontSize: '2.5rem', fontWeight: 'bold', color: '#111827', marginBottom: '8px' }}>
+      <div style={{ textAlign: 'left', marginBottom: '32px' }}>
+        <h1 style={{ fontSize: '2.5rem', fontWeight: 'bold', color: '#22c55e', marginBottom: '8px' }}>
           Smart Route Optimizer
         </h1>
         <p style={{ fontSize: '1.125rem', color: '#6b7280' }}>
@@ -53,10 +53,16 @@ export default function RouteOptimizer() {
           <HybridInput placeholder="From (e.g., Lagos)" onSubmit={setOrigin} />
           <HybridInput placeholder="To (e.g., Kano)" onSubmit={setDestination} />
         </div>
-        <Button variant="primary" style={{ width: '100%' }}>
-          <Navigation size={16} style={{ marginRight: '8px' }} />
-          Find Best Routes
-        </Button>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr auto', gap: '16px' }}>
+          <Button variant="primary">
+            <Navigation size={16} style={{ marginRight: '8px' }} />
+            Find Best Routes
+          </Button>
+          <Button variant="outline">
+            <DollarSign size={16} style={{ marginRight: '8px' }} />
+            Cost Calculator
+          </Button>
+        </div>
       </Card>
 
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '20px' }}>

@@ -70,7 +70,25 @@ export default function VoiceChat() {
     display: 'flex',
     flexDirection: 'column',
     height: '100vh',
-    backgroundColor: '#f9fafb'
+    backgroundColor: '#f0fdf4'
+  }
+
+  const headerStyle = {
+    padding: '24px',
+    backgroundColor: 'white',
+    borderBottom: '1px solid #e5e7eb'
+  }
+
+  const titleStyle = {
+    fontSize: '2rem',
+    fontWeight: 'bold',
+    color: '#15803d',
+    marginBottom: '8px'
+  }
+
+  const subtitleStyle = {
+    fontSize: '1rem',
+    color: '#6b7280'
   }
 
   const chatAreaStyle = {
@@ -93,17 +111,29 @@ export default function VoiceChat() {
     margin: '0 auto'
   }
 
-  const titleStyle = {
+  const emptyTitleStyle = {
     fontSize: '2rem',
     fontWeight: 'bold',
-    color: '#111827',
+    color: '#15803d',
     marginBottom: '16px'
   }
 
-  const subtitleStyle = {
+  const headerTitleStyle = {
+    fontSize: '2rem',
+    fontWeight: 'bold',
+    color: '#15803d',
+    marginBottom: '8px'
+  }
+
+  const emptySubtitleStyle = {
     fontSize: '1rem',
     color: '#6b7280',
     marginBottom: '32px'
+  }
+
+  const headerSubtitleStyle = {
+    fontSize: '1rem',
+    color: '#6b7280'
   }
 
   const promptsGridStyle = {
@@ -226,9 +256,9 @@ export default function VoiceChat() {
   }
 
   const inputAreaStyle = {
-    backgroundColor: 'white',
+    backgroundColor: '#15803d',
     borderTop: '1px solid #e5e7eb',
-    padding: '16px 24px',
+    padding: '24px',
     boxShadow: '0 -4px 6px -1px rgba(0, 0, 0, 0.1), 0 -2px 4px -1px rgba(0, 0, 0, 0.06)'
   }
 
@@ -239,12 +269,18 @@ export default function VoiceChat() {
 
   return (
     <div style={containerStyle}>
+      {/* Header */}
+      <div style={headerStyle}>
+        <h1 style={headerTitleStyle}>Voice Chat Assistant</h1>
+        <p style={headerSubtitleStyle}>Chat with AI in your local language</p>
+      </div>
+
       <div ref={chatContainerRef} style={chatAreaStyle}>
         {messages.length === 0 ? (
           <div style={emptyStateStyle}>
             <div style={{ fontSize: '4rem', marginBottom: '24px' }}>💬</div>
-            <h2 style={titleStyle}>Start a conversation...</h2>
-            <p style={subtitleStyle}>
+            <h2 style={emptyTitleStyle}>Start a conversation...</h2>
+            <p style={emptySubtitleStyle}>
               Ask me anything about your business, prices, or get help with tasks
             </p>
             
@@ -326,11 +362,18 @@ export default function VoiceChat() {
 
       <div style={inputAreaStyle}>
         <div style={inputContainerStyle}>
-          <HybridInput
-            placeholder="Type your message or use voice..."
-            onSubmit={handleSendMessage}
-            size="large"
-          />
+          <div style={{
+            backgroundColor: 'white',
+            borderRadius: '16px',
+            padding: '4px',
+            boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)'
+          }}>
+            <HybridInput
+              placeholder="Type your message or use voice..."
+              onSubmit={handleSendMessage}
+              size="large"
+            />
+          </div>
         </div>
       </div>
 

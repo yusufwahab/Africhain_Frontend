@@ -19,16 +19,15 @@ export default function Login() {
   }
 
   return (
-    <div style={{ minHeight: '100vh', display: 'flex', backgroundColor: '#f9fafb' }}>
+    <div style={{ minHeight: '100vh', display: 'flex', backgroundColor: '#f0fdf4' }}>
       {/* Left Side - Branding */}
       <div style={{
         flex: 1,
         background: 'linear-gradient(135deg, #22c55e 0%, #16a34a 100%)',
-        display: 'flex',
+        display: window.innerWidth < 768 ? 'none' : 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        padding: '40px',
-        display: window.innerWidth < 768 ? 'none' : 'flex'
+        padding: '40px'
       }}>
         <div style={{ textAlign: 'center', color: 'white' }}>
           <div style={{

@@ -67,7 +67,7 @@ export default function Layout({ children }) {
   const isActive = (href) => location.pathname === href
 
   return (
-    <div style={{ display: 'flex', minHeight: '100vh', backgroundColor: '#f9fafb' }}>
+    <div style={{ display: 'flex', minHeight: '100vh', backgroundColor: '#f0fdf4' }}>
       {/* Mobile sidebar backdrop */}
       <AnimatePresence>
         {sidebarOpen && !isDesktop && (
@@ -108,13 +108,14 @@ export default function Layout({ children }) {
           justifyContent: 'space-between',
           height: '64px',
           padding: '0 24px',
-          borderBottom: '1px solid #e5e7eb'
+          borderBottom: '1px solid #e5e7eb',
+          backgroundColor: 'white'
         }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
             <div style={{
               width: '32px',
               height: '32px',
-              backgroundColor: '#22c55e',
+              backgroundColor: '#15803d',
               borderRadius: '8px',
               display: 'flex',
               alignItems: 'center',
@@ -166,7 +167,7 @@ export default function Layout({ children }) {
                 transition: 'all 0.2s ease',
                 backgroundColor: isActive(item.href) ? '#dcfce7' : 'transparent',
                 color: isActive(item.href) ? '#15803d' : '#6b7280',
-                borderRight: isActive(item.href) ? '2px solid #22c55e' : 'none'
+                borderRight: isActive(item.href) ? '2px solid #15803d' : 'none'
               }}
             >
               <item.icon size={20} />
@@ -188,7 +189,7 @@ export default function Layout({ children }) {
             <div style={{
               width: '40px',
               height: '40px',
-              backgroundColor: '#22c55e',
+              backgroundColor: '#15803d',
               borderRadius: '50%',
               display: 'flex',
               alignItems: 'center',
@@ -256,7 +257,14 @@ export default function Layout({ children }) {
               </button>
             )}
 
-            <div style={{ display: 'flex', alignItems: 'center', gap: '16px', marginLeft: 'auto' }}>
+            <nav style={{ display: 'flex', alignItems: 'center', gap: '32px', marginLeft: 'auto', marginRight: '16px' }}>
+              <span style={{ fontSize: '0.875rem', color: '#6b7280', cursor: 'pointer' }}>Dashboard</span>
+              <span style={{ fontSize: '0.875rem', color: '#6b7280', cursor: 'pointer' }}>Tools</span>
+              <span style={{ fontSize: '0.875rem', color: '#6b7280', cursor: 'pointer' }}>Reports</span>
+              <span style={{ fontSize: '0.875rem', color: '#6b7280', cursor: 'pointer' }}>Help</span>
+            </nav>
+
+            <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
               {/* Notifications */}
               <button 
                 onClick={() => navigate('/notifications')}
@@ -311,7 +319,7 @@ export default function Layout({ children }) {
         <main style={{ 
           flex: 1, 
           overflow: 'auto',
-          backgroundColor: '#f9fafb'
+          backgroundColor: '#f0fdf4'
         }}>
           {children}
         </main>

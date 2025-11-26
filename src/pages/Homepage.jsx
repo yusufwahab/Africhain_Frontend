@@ -60,7 +60,7 @@ export default function Homepage() {
   const logoIconStyle = {
     width: '40px',
     height: '40px',
-    backgroundColor: '#22c55e',
+    backgroundColor: '#15803d',
     borderRadius: '8px',
     display: 'flex',
     alignItems: 'center',
@@ -83,7 +83,7 @@ export default function Homepage() {
 
   const heroStyle = {
     padding: '120px 24px',
-    background: 'linear-gradient(135deg, #22c55e 0%, #16a34a 100%)',
+    backgroundColor: '#15803d',
     color: 'white',
     textAlign: 'center'
   }
@@ -124,7 +124,7 @@ export default function Homepage() {
   const statNumberStyle = {
     fontSize: '3rem',
     fontWeight: 'bold',
-    color: '#22c55e',
+    color: '#15803d',
     marginBottom: '8px'
   }
 
@@ -237,7 +237,7 @@ export default function Homepage() {
   const testimonialAvatarStyle = {
     width: '48px',
     height: '48px',
-    backgroundColor: '#22c55e',
+    backgroundColor: '#15803d',
     borderRadius: '50%',
     display: 'flex',
     alignItems: 'center',
@@ -333,6 +333,12 @@ export default function Homepage() {
             <div style={logoIconStyle}>⛓️</div>
             <span style={logoTextStyle}>ChainForge Africa</span>
           </div>
+          <nav style={{ display: 'flex', alignItems: 'center', gap: '32px' }}>
+            <span style={{ fontSize: '0.875rem', color: '#6b7280', cursor: 'pointer' }}>Features</span>
+            <span style={{ fontSize: '0.875rem', color: '#6b7280', cursor: 'pointer' }}>Pricing</span>
+            <span style={{ fontSize: '0.875rem', color: '#6b7280', cursor: 'pointer' }}>About</span>
+            <span style={{ fontSize: '0.875rem', color: '#6b7280', cursor: 'pointer' }}>Contact</span>
+          </nav>
           <div style={navButtonsStyle}>
             <Button variant="ghost" onClick={() => navigate('/login')}>Login</Button>
             <Button variant="primary" onClick={() => navigate('/signup')}>Get Started</Button>
@@ -352,7 +358,7 @@ export default function Homepage() {
             variant="outline" 
             size="large"
             onClick={() => navigate('/signup')}
-            style={{ backgroundColor: 'white', color: '#22c55e', fontSize: '1.125rem', padding: '16px 32px' }}
+            style={{ backgroundColor: 'white', color: '#15803d', fontSize: '1.125rem', padding: '16px 32px' }}
           >
             Get Started Free <ArrowRight size={20} style={{ marginLeft: '8px' }} />
           </Button>
@@ -381,7 +387,7 @@ export default function Homepage() {
           {features.map((feature, index) => (
             <div key={index} style={featureCardStyle}>
               <div style={featureIconStyle}>
-                <TrendingUp size={32} style={{ color: '#16a34a' }} />
+                <TrendingUp size={32} style={{ color: '#15803d' }} />
               </div>
               <h3 style={featureTitleStyle}>{feature.title}</h3>
               <p style={featureDescStyle}>{feature.desc}</p>
@@ -441,7 +447,7 @@ export default function Homepage() {
         <div style={footerContentStyle}>
           <div style={footerSectionStyle}>
             <div style={logoStyle}>
-              <div style={{ ...logoIconStyle, backgroundColor: '#22c55e' }}>⛓️</div>
+              <div style={{ ...logoIconStyle, backgroundColor: '#15803d' }}>⛓️</div>
               <span style={{ ...logoTextStyle, color: 'white' }}>ChainForge Africa</span>
             </div>
             <p style={{ fontSize: '0.875rem', color: '#9ca3af', lineHeight: '1.6' }}>

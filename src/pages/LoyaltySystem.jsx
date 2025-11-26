@@ -60,14 +60,14 @@ export default function LoyaltySystem() {
   }
 
   const headerStyle = {
-    textAlign: 'center',
+    textAlign: 'left',
     marginBottom: '32px'
   }
 
   const titleStyle = {
-    fontSize: '2.5rem',
+    fontSize: '2rem',
     fontWeight: 'bold',
-    color: '#111827',
+    color: '#15803d',
     marginBottom: '8px'
   }
 

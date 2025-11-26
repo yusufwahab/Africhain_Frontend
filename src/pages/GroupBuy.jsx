@@ -143,14 +143,14 @@ export default function GroupBuy() {
   }
 
   const headerStyle = {
-    textAlign: 'center',
+    textAlign: 'left',
     marginBottom: '32px'
   }
 
   const titleStyle = {
-    fontSize: '2.5rem',
+    fontSize: '2rem',
     fontWeight: 'bold',
-    color: '#111827',
+    color: '#15803d',
     marginBottom: '8px'
   }
 
@@ -174,7 +174,7 @@ export default function GroupBuy() {
   const statValueStyle = {
     fontSize: '2rem',
     fontWeight: 'bold',
-    color: '#22c55e'
+    color: '#15803d'
   }
 
   const statLabelStyle = {

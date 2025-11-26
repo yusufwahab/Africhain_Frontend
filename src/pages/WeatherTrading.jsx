@@ -51,8 +51,8 @@ export default function WeatherTrading() {
 
   return (
     <div style={{ padding: '24px', maxWidth: '1280px', margin: '0 auto' }}>
-      <div style={{ textAlign: 'center', marginBottom: '32px' }}>
-        <h1 style={{ fontSize: '2.5rem', fontWeight: 'bold', color: '#111827', marginBottom: '8px' }}>
+      <div style={{ textAlign: 'left', marginBottom: '32px' }}>
+        <h1 style={{ fontSize: '2rem', fontWeight: 'bold', color: '#15803d', marginBottom: '8px' }}>
           Weather-Smart Trading
         </h1>
         <p style={{ fontSize: '1.125rem', color: '#6b7280' }}>
@@ -66,7 +66,7 @@ export default function WeatherTrading() {
             key={city}
             style={{
               cursor: 'pointer',
-              border: selectedCity === city ? '2px solid #22c55e' : '1px solid #f3f4f6'
+              border: selectedCity === city ? '2px solid #15803d' : '1px solid #f3f4f6'
             }}
             onClick={() => setSelectedCity(city)}
           >

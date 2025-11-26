@@ -173,13 +173,13 @@ export default function BusinessSchool() {
   }
 
   const headerStyle = {
-    textAlign: 'center'
+    textAlign: 'left'
   }
 
   const titleStyle = {
     fontSize: '2.5rem',
     fontWeight: 'bold',
-    color: '#111827',
+    color: '#22c55e',
     marginBottom: '8px'
   }
 

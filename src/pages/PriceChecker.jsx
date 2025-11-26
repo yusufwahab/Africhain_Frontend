@@ -29,7 +29,7 @@ export default function PriceChecker() {
 
   const containerStyle = {
     minHeight: '100vh',
-    backgroundColor: '#f9fafb',
+    backgroundColor: '#f0fdf4',
     padding: '24px'
   }
 
@@ -42,14 +42,14 @@ export default function PriceChecker() {
   }
 
   const headerStyle = {
-    textAlign: 'center',
+    textAlign: 'left',
     marginBottom: '32px'
   }
 
   const titleStyle = {
-    fontSize: '2.5rem',
+    fontSize: '2rem',
     fontWeight: 'bold',
-    color: '#111827',
+    color: '#15803d',
     marginBottom: '8px'
   }
 
@@ -311,15 +311,20 @@ export default function PriceChecker() {
               />
             </div>
           </div>
-          <Button
-            onClick={() => handleSearch('rice kano')}
-            loading={loading}
-            size="large"
-            style={{ width: '100%' }}
-          >
-            <Search style={{ marginRight: '8px' }} size={20} />
-            {t('prices.check_price')}
-          </Button>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr auto', gap: '16px' }}>
+            <Button
+              onClick={() => handleSearch('rice kano')}
+              loading={loading}
+              size="large"
+            >
+              <Search style={{ marginRight: '8px' }} size={20} />
+              {t('prices.check_price')}
+            </Button>
+            <Button variant="outline" size="large">
+              <Bell style={{ marginRight: '8px' }} size={20} />
+              Set Alert
+            </Button>
+          </div>
         </Card>
 
         {searchResult && (

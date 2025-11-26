@@ -26,7 +26,7 @@ export default function Button({
   
   const variants = {
     primary: {
-      backgroundColor: '#22c55e',
+      backgroundColor: '#15803d',
       color: 'white'
     },
     secondary: {
@@ -35,8 +35,8 @@ export default function Button({
       border: '1px solid #e5e7eb'
     },
     outline: {
-      border: '1px solid #22c55e',
-      color: '#16a34a',
+      border: '1px solid #15803d',
+      color: '#15803d',
       backgroundColor: 'white'
     },
     ghost: {
@@ -72,7 +72,7 @@ export default function Button({
     
     switch (variant) {
       case 'primary':
-        e.target.style.backgroundColor = '#16a34a'
+        e.target.style.backgroundColor = '#14532d'
         break
       case 'secondary':
         e.target.style.backgroundColor = '#e5e7eb'
@@ -91,7 +91,7 @@ export default function Button({
     
     switch (variant) {
       case 'primary':
-        e.target.style.backgroundColor = '#22c55e'
+        e.target.style.backgroundColor = '#15803d'
         break
       case 'secondary':
         e.target.style.backgroundColor = '#f3f4f6'

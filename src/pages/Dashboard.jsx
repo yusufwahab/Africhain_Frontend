@@ -55,14 +55,14 @@ export default function Dashboard() {
   }
 
   const quickActions = [
-    { icon: DollarSign, label: 'Log Sale', color: '#dcfce7', iconColor: '#16a34a' },
-    { icon: TrendingUp, label: 'Check Price', color: '#dcfce7', iconColor: '#16a34a' },
-    { icon: Phone, label: 'Find Supplier', color: '#dcfce7', iconColor: '#16a34a' },
-    { icon: CheckSquare, label: 'Add Task', color: '#dcfce7', iconColor: '#16a34a' },
-    { icon: Package, label: 'Forex', color: '#dcfce7', iconColor: '#16a34a' },
-    { icon: TrendingUp, label: 'Route', color: '#dcfce7', iconColor: '#16a34a' },
-    { icon: GraduationCap, label: 'Learn', color: '#dcfce7', iconColor: '#16a34a' },
-    { icon: Trophy, label: 'Leaderboard', color: '#dcfce7', iconColor: '#16a34a' }
+    { icon: DollarSign, label: 'Log Sale', color: '#dcfce7', iconColor: '#15803d' },
+    { icon: TrendingUp, label: 'Check Price', color: '#dcfce7', iconColor: '#15803d' },
+    { icon: Phone, label: 'Find Supplier', color: '#dcfce7', iconColor: '#15803d' },
+    { icon: CheckSquare, label: 'Add Task', color: '#dcfce7', iconColor: '#15803d' },
+    { icon: Package, label: 'Forex', color: '#dcfce7', iconColor: '#15803d' },
+    { icon: TrendingUp, label: 'Route', color: '#dcfce7', iconColor: '#15803d' },
+    { icon: GraduationCap, label: 'Learn', color: '#dcfce7', iconColor: '#15803d' },
+    { icon: Trophy, label: 'Leaderboard', color: '#dcfce7', iconColor: '#15803d' }
   ]
 
   const todaySales = mockSales.reduce((sum, sale) => sum + sale.amount, 0)
@@ -78,7 +78,7 @@ export default function Dashboard() {
   }
 
   const heroCardStyle = {
-    background: 'linear-gradient(135deg, #22c55e 0%, #3b82f6 100%)',
+    backgroundColor: '#15803d',
     color: 'white',
     borderRadius: '16px',
     padding: '32px',
@@ -135,7 +135,7 @@ export default function Dashboard() {
   const sectionTitleStyle = {
     fontSize: '1.25rem',
     fontWeight: '600',
-    color: '#111827',
+    color: '#15803d',
     marginBottom: '16px'
   }
 
@@ -252,7 +252,7 @@ export default function Dashboard() {
           animate={{ opacity: 1, y: 0 }}
           style={greetingStyle}
         >
-          {getGreeting()} 🌅
+          {getGreeting()}
         </motion.h1>
         <div style={timeInfoStyle}>
           <div style={timeItemStyle}>
@@ -337,10 +337,10 @@ export default function Dashboard() {
         {/* Sales Today */}
         <div style={statCardStyle}>
           <div style={statHeaderStyle}>
-            <div style={statIconStyle('#dcfce7', '#16a34a')}>
+            <div style={statIconStyle('#dcfce7', '#15803d')}>
               <DollarSign size={24} />
             </div>
-            <span style={{ fontSize: '0.875rem', color: '#16a34a', fontWeight: '600' }}>+23%</span>
+            <span style={{ fontSize: '0.875rem', color: '#15803d', fontWeight: '600' }}>+23%</span>
           </div>
           <h3 style={statLabelStyle}>{t('dashboard.sales_today')}</h3>
           <p style={statValueStyle}>₦{todaySales.toLocaleString()}</p>
@@ -386,7 +386,7 @@ export default function Dashboard() {
               <span style={{ 
                 padding: '2px 8px', 
                 backgroundColor: '#dcfce7', 
-                color: '#16a34a', 
+                color: '#15803d', 
                 fontSize: '0.75rem', 
                 borderRadius: '9999px' 
               }}>2</span>
@@ -410,7 +410,7 @@ export default function Dashboard() {
         <h3 style={sectionTitleStyle}>{t('dashboard.recent_activity')}</h3>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
           {[
-            { icon: DollarSign, text: 'You logged: 3 crates of eggs - ₦9,000', time: '2h ago', color: '#16a34a' },
+            { icon: DollarSign, text: 'You logged: 3 crates of eggs - ₦9,000', time: '2h ago', color: '#15803d' },
             { icon: Bell, text: 'Price Alert: Rice dropped to ₦39k in Kano', time: '4h ago', color: '#2563eb' },
             { icon: CheckSquare, text: 'Reminder: Collect ₦5,000 from Musa', time: '6h ago', color: '#d97706' }
           ].map((activity, index) => (

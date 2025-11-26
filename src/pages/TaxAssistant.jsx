@@ -31,8 +31,8 @@ export default function TaxAssistant() {
 
   return (
     <div style={{ padding: '24px', maxWidth: '1280px', margin: '0 auto' }}>
-      <div style={{ textAlign: 'center', marginBottom: '32px' }}>
-        <h1 style={{ fontSize: '2.5rem', fontWeight: 'bold', color: '#111827', marginBottom: '8px' }}>
+      <div style={{ textAlign: 'left', marginBottom: '32px' }}>
+        <h1 style={{ fontSize: '2rem', fontWeight: 'bold', color: '#15803d', marginBottom: '8px' }}>
           Tax Assistant
         </h1>
         <p style={{ fontSize: '1.125rem', color: '#6b7280' }}>
