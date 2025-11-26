@@ -1,0 +1,46 @@
+{
+  "nav": {
+    "dashboard": "Dashboard",
+    "voice": "Voice Chat",
+    "prices": "Price Checker",
+    "suppliers": "Suppliers",
+    "tasks": "Tasks",
+    "credit": "Trade Credit",
+    "forex": "Currency Shield",
+    "groupbuy": "Group Buy",
+    "govtracker": "Gov Pay Tracker",
+    "routes": "Route Optimizer",
+    "tax": "Tax Assistant",
+    "weather": "Weather Trading",
+    "leaderboard": "Leaderboard",
+    "learn": "Business School",
+    "loyalty": "Loyalty System"
+  },
+  "dashboard": {
+    "greeting_morning": "Good morning, {{name}}!",
+    "greeting_afternoon": "Good afternoon, {{name}}!",
+    "greeting_evening": "Good evening, {{name}}!",
+    "input_placeholder": "What would you like to do today?",
+    "quick_actions": "Quick Actions",
+    "sales_today": "Sales Today",
+    "pending_tasks": "Pending Tasks",
+    "active_alerts": "Active Alerts",
+    "recent_activity": "Recent Activity"
+  },
+  "prices": {
+    "title": "Price Intelligence",
+    "subtitle": "Real-time market prices across Nigeria",
+    "product_placeholder": "Product (e.g. rice, eggs, yam)",
+    "location_placeholder": "City (e.g. Lagos, Kano)",
+    "check_price": "Check Price",
+    "current_price": "Current Price",
+    "set_alert": "Set Price Alert",
+    "compare_cities": "Compare Other Cities"
+  },
+  "language": {
+    "select_title": "Choose Your Language",
+    "tagline": "Trade Smart. Talk Easy.",
+    "auto_detect": "We detected you're in {{location}} → {{language}}",
+    "skip": "Skip for now"
+  }
+}
